@@ -48,6 +48,8 @@ hints.addMode('C', "Generate curl command for a form", function(elem) {
 
         ["-A", win.navigator.userAgent],
 
+        ["-JOL"],
+
         [url],
     ];
 
