@@ -1,0 +1,19 @@
+js <<EOF
+var INFO =
+["plugin", { name: "gmail",
+             version: "0.1",
+             href: "http://dactyl.sf.net/pentadactyl/plugins#gmail-plugin",
+             summary: "Gmail integration",
+             xmlns: "dactyl" },
+    ["author", { email: "maglione.k@gmail.com" },
+        "Kris Maglione"],
+    ["license", {}, "Public Domain"],
+    ["project", { name: "Pentadactyl", "min-version": "1.0"}],
+    ["p", {},
+        "Adds key passthrough mappings for Gmail."]]
+EOF
+
+group default -locations mail.google.com
+
+set passkeys+=mail.google.com:'<Esc><Up><Down><Left><Right>!#*+-_,./`~<C-Down><C-s><Enter>?AFINRTU[]{}acdefjk lmnopqrstuvxyz',*a,*n,*r,*s,*t,*u,ga,gc,gd,gi,gk,gl,gp,gs,gt,yo
+set strictfocus^=mail.google.com:laissez-faire
