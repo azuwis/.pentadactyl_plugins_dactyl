@@ -414,7 +414,6 @@ var CSS =
             display: inline-block;
             min-width: 32px !important;
             min-height: 32px !important;
-            border: 1px solid #dfdfdf;
             cursor: pointer;
             overflow: hidden;
             -moz-box-sizing: border-box;
